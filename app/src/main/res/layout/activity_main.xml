@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Code by : Muhammmad Syahrun Dalu
+NIM : 10116584
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:scrollbarStyle="outsideOverlay"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/jarak_20dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/rounded_corners"
+            android:orientation="horizontal"
+            android:radius="10dp">
+
+
+            <LinearLayout
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginVertical="@dimen/jarak_24dp"
+                android:layout_marginLeft="@dimen/jarak_24dp">
+
+                <ImageView
+                    android:id="@+id/digilogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="Logo Digi Team"
+                    android:src="@drawable/digilogo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/jarak_24dp"
+                android:layout_marginLeft="@dimen/jarak_24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/digiteam"
+                    android:textColor="@color/Textblack"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tagline"
+                    android:textColor="@color/secondaryTextBlack"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tagline2"
+                    android:textColor="@color/secondaryTextBlack"
+                    android:textSize="@dimen/text_size_12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/jarak_16dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="44dp"
+                android:layout_height="44dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="Logo Digi Team"
+                    android:src="@drawable/profile" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/jarak_18dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/name"
+                    android:textColor="@color/Textblack"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profession"
+                    android:textColor="@color/secondaryTextBlack"
+                    android:textSize="@dimen/text_size_12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/workhour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/jarak_16dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/shadow_layer"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            android:padding="@dimen/jarak_16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Jam Kerja Bulan Ini"
+                android:textColor="@color/Textblack"
+                android:textSize="@dimen/text_size_20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Jam kerja kamu bilan ini : 130.53 Jam"
+                android:textColor="@color/AccentColor"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/some_id_rounder1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="8dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="5dp"
+                        android:text="130.53 Jam"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_20sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="130dp"
+                        android:background="@drawable/some_id_rounder2"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="15dp"
+                            android:paddingLeft="70dp"
+                            android:src="@drawable/clock" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/jarak_12dp"
+                android:text="Batas Minimum Jam Kerja 170jam/bulan"
+                android:textColor="@color/secondaryTextBlack"
+                android:textSize="@dimen/text_size_12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/jarak_24dp"
+                android:background="@drawable/round_corner_primary_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="@dimen/jarak_8dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_horizontal"
+                    android:text="Check-in"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/laporan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/jarak_16dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/shadow_layer"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            android:padding="@dimen/jarak_16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/jarak_24dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Laporan Kamu"
+                android:textColor="@color/Textblack"
+                android:textSize="@dimen/text_size_20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/jarak_12dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Maret"
+                        android:textColor="@color/PrimaryColor"
+                        android:textSize="@dimen/jarak_16dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_third" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_secondary" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_third" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_third" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_third" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_secondary" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_third" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_secondary" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_secondary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_third" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/jarak_20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/jarak_12dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="April"
+                        android:textColor="@color/PrimaryColor"
+                        android:textSize="@dimen/jarak_16dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_secondary" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_third" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_secondary" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_secondary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_third" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_third" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_third" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_secondary" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_secondary" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_third" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_secondary" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_third" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/some_id_rounder1" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_third" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_third" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:background="@drawable/round_corner_third" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/jarak_24dp"
+                android:background="@drawable/round_corner_primary_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="@dimen/jarak_8dp"
+                    android:gravity="center_horizontal"
+                    android:text="Buat Laporan"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_marginTop="25dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="50dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/team"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Team"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/kehadiran"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kehadiran"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/laporan"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laporan"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="50dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/kehadiran"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kehadiran"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/booking"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Booking"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="60dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/wiki"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wiki"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:gravity="bottom"
+            android:text="Code by : Muhammad Syahrun Dalu - 10116584"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
+

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LayoutingDigiteam</string>
+    <string name="activity_main">activity_main</string>
+
+
+    <string name="digiteam">DigiTeam</string>
+    <string name="tagline">Digital Together Everyone Achieve More</string>
+    <string name="tagline2">Jabar Digital Service</string>
+
+    <string name="name">Muhammad Syahrun Dalu</string>
+    <string name="profession">UI Designer</string>
+</resources>
